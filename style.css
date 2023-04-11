@@ -98,9 +98,12 @@ font-family: sans-serif;
 }
 .button> h3{
     
-    font-size: 100%;
+  font-size: inherit;
     padding: 1rem;
     margin: 5px 5px 5px 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 .button > #svvg{
    
@@ -161,9 +164,10 @@ font-family: sans-serif;
  }
 .button> h3{
     
-    font-size:10px;
+  font-size: inherit;
       margin: 0 0 0 10px;
-   
+      overflow: hidden;
+      text-overflow: ellipsis;
 }
 .button > #svvg{
      

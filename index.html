@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./style.css" />
+      <script type="text/javascript" src="main.js"></script>
+      <title>Umbrella</title>
+   </head>
+   <body>
+      <div class="container">
+
+
+         <!-- left side -->
+         <div class="left">
+            <img id="place" src="./Images/Blue_umbrella.png" height="80%" width="60%" />
+            <img
+               id="loader"
+               src="./Images/loader_icon.svg"
+               height="100px"
+               width="50%"
+               style="margin: 5rem 0 2rem 0; display: none"
+            />
+            <img
+               id="image-preview"
+               src="#"
+               height="5%"
+               width="15%"
+               style="margin: 0; display: none"
+            />
+         </div>
+
+         <!-- right side -->
+         <div class="right">
+            <h1>Custom Umbrella</h1>
+            <div class="colors">
+               <button
+                  id="circular-button1"
+                  class="circular-button1"
+                  onclick=" colorchange('pink')"
+               ></button>
+               <button
+                  id="circular-button2"
+                  class="circular-button2"
+                  onclick=" colorchange('blue')"
+               ></button>
+               <button
+                  id="circular-button3"
+                  class="circular-button3"
+                  onclick=" colorchange('yellow')"
+               ></button>
+            </div>
+            <div class="customize">
+               <h4>Customize your Umbrella</h4>
+               <h7>Upload a logo for an instant preview.</h7>
+               <h7>.png and .jpg files only.Max file size is 5MB .</h7>
+            </div>
+
+            <button id="button" class="button" onclick="do2()">
+               <img src="./Images/upload_icon.svg" height="20px" width="10%" id="svvg" />
+               <img
+                  id="loader2"
+                  src="./Images/loader_icon.svg"
+                  height="25px"
+                  width="25px"
+                  style="padding: 0; display: none"
+               />
+               <h3 id="filename">UPLOAD LOGO</h3>
+               <input
+                  style="display: none"
+                  type="file"
+                  id="image-input"
+                  onchange="uploadImage()"
+               />
+            </button>
+         </div>
+      </div>
+   </body>
+</html>
